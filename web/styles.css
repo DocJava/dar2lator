@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#panel-card {
+    padding-top: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+    border-color: #dedede;
+    /*background-color: #d6d6d6;*/
+    /*border: 1px solid lightgray;*/
+}
+
+#my_app, #app_start {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.value {
+    text-align: right;
+    font-size: 180%;
+    border: 1px solid lightgray;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#output {
+    padding: 20px;
+    text-align: center;
+}
+
+[shade~="dark"] {
+    background-color: #d6d6d6;
+}
+
+[shade~="blue"] {
+    background-color: #4d90fe;
+    color: white;
+    font-weight: 900;
+}
+
+[bold] {
+    font-weight: bold;
+}
+
+[shade~="light"] {
+    background-color: #F5F5F5;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+span {
+    padding: 0 0 0 0;
+}
+
+button {
+    margin: 1px 4px 7px;
+    background-color: #E0E0E0;
+    font-weight: 500;
+    font-size: 100%;
+    height: 45px;
+    width: 86px;
+    position: inherit;
+    border-radius: 5px;
+    outline:none;
+    border: 1px solid lightgray;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(200, 0, 128, 0.1) inset;*/
+}
+
+button:hover {
+     border: 1px solid gray;
+ }
+
+#dartulator_advanced,
+#dartulator_basic {
+    margin-bottom: 5px;
+    height: 100%;
+}
+
+#dartulator_basic {
+    margin-left: 15px;
+}
+
+/*super-script {*/
+    /*font-size: .83em;*/
+    /*line-height: 0.5em;*/
+    /*vertical-align: baseline;*/
+    /*position: relative;*/
+    /*top: -0.4em;*/
+/*}*/
+
+#closingParenthesis,
+#answer {
+    padding-left: 0;
+    color: lightgray;
+}
+
+#answer {
+    font-weight: 200;
+    text-align: right;
+    padding-right: 25px;
+    padding-bottom: 0;
+}
