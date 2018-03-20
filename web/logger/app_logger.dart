@@ -1,4 +1,4 @@
-const _isDevEnv = true;
+const _isDevEnv = false;
 
 logToConsole(dynamic message) {
   if (!_isDevEnv) {
